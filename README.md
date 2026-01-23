@@ -50,8 +50,7 @@ The core logic is powered by a graph-based workflow that ensures accuracy throug
 * **Web Search:** Triggered conditionally if the internal context is missing or low-quality.
 * **Generate & Loop:** Generates a response and checks for usefulness; if the answer is poor, it transforms the query and loops back.
 
-![Pipeline Schematic](assets/pipeline_schematic.png)
-*(Please verify the file path matches your uploaded image)*
+
 
 ### 2. Updating Vector Database
 To ensure the bot knows about the latest matches, we run a scheduled pipeline:
@@ -59,7 +58,7 @@ To ensure the bot knows about the latest matches, we run a scheduled pipeline:
 2.  **CSV Updates:** Appends new data to the context files.
 3.  **Vector Store Sync:** Pathway updates the embeddings automatically.
 
-![Updating Vector DB](assets/vector_db_update.png)
+
 
 ### 3. Live Commentary Schematic
 The system ingests live data streams to generate immersive commentary.
@@ -67,7 +66,7 @@ The system ingests live data streams to generate immersive commentary.
 * **Process:** LLM-based Comment Generator.
 * **Output:** Text displayed on UI + TTS Audio output.
 
-![Live Commentary](assets/commentary_schematic.png)
+
 
 ---
 
